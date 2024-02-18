@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Purchase Calculator</title>
+</head>
+
+<body>
+    <script>
+        // Get chicken price per kilogram from user
+        let chickenPriceKg = 500
+
+        // Get amount of chicken purchased from user
+        let purchaseChicken = prompt("Enter the chicken purchased (in grams):");
+        purchaseChicken = parseFloat(purchaseChicken); // Convert input to a number
+
+        // Calculate price per gram
+        let pricePerGram = chickenPriceKg / 1000;
+
+        // Calculate total price
+        let price = purchaseChicken * pricePerGram;
+
+        // Display purchase amount and total price on the screen
+        document.write("<h2>Chicken Purchase Details</h2>");
+        document.write("<p>Chicken Amount: " + chickenPriceKg + " kg</p>");
+        document.write("<p>Purchase Qty: " + purchaseChicken + " grams</p>");
+        document.write("<p>Total Price: PKR " + price.toFixed(2) + "</p>");
+    </script>
+</body>
+
+</html>
